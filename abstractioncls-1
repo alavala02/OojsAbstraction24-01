@@ -1,0 +1,55 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <!--This is Electricity bill code-->
+
+        <script>
+            var electricitybill=function(Sname,Uno,units){
+                this.Sno=Sname;
+                this.Uno=Uno;
+                this.units=units;
+
+            var priceperunitcharge=3;
+
+            var SerCharge=10;
+
+            var calfinalchager=function(){
+
+            var bill=(units*priceperunitcharge)+SerCharge;
+                console.log("totalbill: "+bill)
+            }
+                this.getBill=function(){
+                console.log("Sname: "+this.Sno+" Uno: "+this.Uno);
+                 calfinalchager();
+}
+}
+            var bill1=new electricitybill("Ramu",12345,35);
+            console.log(bill1.getBill());
+        </script>
+
+
+                            <!--it is empolyee salary code-->
+                    <script>
+                            var employee=function(name,age,salary){
+                                this.name=name;
+                                this.age=age;
+                                this.salary=salary;
+                            var bonus=20000;
+
+                            var calfinalsalary=function(){
+
+                                var totalsalary=salary+bonus;
+                                console.log("finalsalary: "+totalsalary)
+                            }
+                                this.getempdetails=function(){
+                                    console.log("name "+this.name + " age "+this.age)
+                            calfinalsalary()
+                            }
+                            }
+                        var emp1=new employee("ramu",23,30000)
+                                    console.log(emp1.getempdetails())
+                    </script>
+    </body>
+</html>
